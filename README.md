@@ -59,7 +59,7 @@ If you want to change the content of the mail is transmitted automatically, plea
 After you set up an e-mail address of the administrator, you can work if you uploaded to the server.
 
 ## Licence
-Copyright $copy; 2014 Kobe Beauty Co., Ltd.  
+Copyright &copy; 2014 Kobe Beauty Co., Ltd.  
 Distributed under the [MIT Licence][mit].
 
 ## Author
