@@ -1,0 +1,32 @@
+<?php
+/**
+ * KobeBeauty PHP Contact Form
+ * http://www.kobe-beauty.co.jp/
+ *
+ * Copyright (c) 2014 Kobe Beauty Co., Ltd.
+ * Released under the MIT license
+ */
+
+// ファイル読み込み
+require_once('common/init.php');
+
+// ページタイトル
+$param['title'] = '予期せぬエラー | 無料ダウンロード';
+// パス
+$param['root_url'] = '';
+
+// ヘッダー表示
+showHeader($param);
+?>
+
+<h1 class="page-header">予期せぬエラーが発生しました</h1>
+
+<div class="page-content">
+	<p class="mb30 text-danger">
+		予期せぬエラーが発生しましたため、お問い合わせが完了しませんでした。
+	</p>
+</div>
+
+<?php
+// フッター表示
+showFooter($param);

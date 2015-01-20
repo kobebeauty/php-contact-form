@@ -1,0 +1,17 @@
+/**
+ * KobeBeauty PHP Contact Form
+ * http://www.kobe-beauty.co.jp/
+ *
+ * Copyright (c) 2014 Kobe Beauty Co., Ltd.
+ * Released under the MIT license
+ */
+
+@charset "utf-8";
+
+@import url(cmn_reset.css);
+
+@import url(bootstrap.min.css);
+@import url(font-awesome.min.css);
+
+@import url(cmn_style.css);
+@import url(contact_style.css);
