@@ -13,7 +13,8 @@ Commercial free, Customization freedom.
 ---
 
 ## Demo
-[Demo][demo]
+[Demo][demo]で動作をご確認ください。  
+You can check the operation in [Demo][demo].
 
 ## Directory Structure
 ```
@@ -38,21 +39,24 @@ contact
 ├── error.php
 └── index.php
 ```
-※Bootstrap、Font Awesameに関するファイルは省略しています。
+※Bootstrap、Font Awesameに関するファイルは省略しています。  
+※It does not describe the Bootstrap and Font Awesame related files
 
 ## Usage
-- init.phpで管理者のメールアドレスを設定します。（13〜15行目）  
-[contact/common/init.php](https://github.com/kobebeauty/php-contact-form/blob/master/contact/common/init.php)
+- [contact/common/init.php](https://github.com/kobebeauty/php-contact-form/blob/master/contact/common/init.php)で管理者のメールアドレスを設定します。（13〜15行目）  
+Please change the "Administrator E-mail Address" of the 13-15 line part of [contact/common/init.php](https://github.com/kobebeauty/php-contact-form/blob/master/contact/common/init.php).
 ```
 // *** 「your_address@example.com」を必ず変更してください！！！
 // 自動返信メールの管理者メールアドレス
 define("ADMIN_MAIL", "your_address@example.com");
 ```
 
-- 自動送信されるメールの内容を変更したい場合は[contact/common/utility.php](https://github.com/kobebeauty/php-contact-form/blob/master/contact/common/utility.php)を編集してください。
+- 自動送信されるメールの内容を変更したい場合は[contact/common/utility.php](https://github.com/kobebeauty/php-contact-form/blob/master/contact/common/utility.php)を編集してください。  
+If you want to change the content of the mail is transmitted automatically, please edit [contact/common/utility.php](https://github.com/kobebeauty/php-contact-form/blob/master/contact/common/utility.php)
 
 ## Install
-管理者のメールアドレスを設定して、サーバーにアップすれば動作します。
+管理者のメールアドレスを設定して、サーバーにアップすれば動作します。  
+After you set up an e-mail address of the administrator, you can work if you uploaded to the server.
 
 ## Licence
 Copyright $copy; 2014 Kobe Beauty Co., Ltd.  
