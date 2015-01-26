@@ -66,6 +66,6 @@ Distributed under the [MIT Licence][mit].
 [kb](https://github.com/kobebeauty)  
 [コウベビューティー株式会社(Kobe Beauty Co., Ltd.)][kobebeauty]  
 
-[DEMO]:http://kobe-beauty.co.jp/release/contact/
+[DEMO]:http://kobe-beauty.co.jp/php-contact-form/demo/
 [MIT]:http://www.opensource.org/licenses/mit-license.php
 [KOBEBEAUTY]:http://www.kobe-beauty.co.jp/
