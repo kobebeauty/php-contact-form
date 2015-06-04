@@ -2,7 +2,7 @@ php-contact-form
 ================
 
 PHPによるお問い合わせフォームです。  
-フロントエンドにBootstrap、Font Awesameを使用しています。  
+フロントエンドにBootstrap、Font Awesomeを使用しています。  
 画面遷移なしの入力チェック、自動返信メール機能があります。  
 商用フリー、カスタマイズ自由です。  
 
@@ -40,7 +40,7 @@ contact
 └── index.php
 ```
 ※Bootstrap、Font Awesameに関するファイルは省略しています。  
-※It does not describe the Bootstrap and Font Awesame related files
+※It does not describe the Bootstrap and Font Awesome related files
 
 ## Usage
 - [contact/common/init.php](https://github.com/kobebeauty/php-contact-form/blob/master/contact/common/init.php)で管理者のメールアドレスを設定します。（13〜15行目）  
