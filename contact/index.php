@@ -21,8 +21,17 @@ $param['root_url'] = '';
 //操作アクションを取得
 $act = isset($_POST["act"]) ? intval($_POST["act"]) : 1;
 
-// 確認ボタンを押下された場合
-if ($act == 2) {
+
+if ($act == 1) {
+	// セッションデータクリア
+	$contact_data = array();
+	// 初期値セット
+	$err_msg = array();
+	$name = '';
+	$email = '';
+	$message = '';
+
+} elseif ($act == 2) { // 確認ボタンを押下された場合
 	// POSTデータをセッションに格納
 	$_SESSION["contact_data"] = isset($_POST["contact_data"]) ? $_POST["contact_data"] : array();
 	// セッションデータを配列にセット
@@ -45,8 +54,6 @@ if ($act == 2) {
 	$name = isset($contact_data["name"]) ? $contact_data["name"] : "";
 	$email = isset($contact_data["email"]) ? $contact_data["email"] : "";
 	$message = isset($contact_data["message"]) ? $contact_data["message"] : "";
-
-	$err_msg = array();
 }
 
 // ヘッダー表示
@@ -88,7 +95,6 @@ getHeader();
 			</div>
 		</div>
 		<div class="btn-area">
-			<button type="reset" class="btn btn-default">リセット<i class="fa fa-times-circle"></i></button>
 			<button type="submit" name="btnSubmit" class="btn btn-success">確認する<i class="fa fa-arrow-circle-right"></i></button>
 			<input type="hidden" name="act" value="2">
 		</div>
