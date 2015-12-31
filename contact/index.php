@@ -11,6 +11,8 @@
 require_once('common/init.php');
 require_once('common/validate.php');
 
+global $param;
+
 // ページタイトル
 $param['title'] = 'お問い合わせ | 無料ダウンロード';
 // パス
@@ -43,10 +45,12 @@ if ($act == 2) {
 	$name = isset($contact_data["name"]) ? $contact_data["name"] : "";
 	$email = isset($contact_data["email"]) ? $contact_data["email"] : "";
 	$message = isset($contact_data["message"]) ? $contact_data["message"] : "";
+
+	$err_msg = array();
 }
 
 // ヘッダー表示
-showHeader($param);
+getHeader();
 ?>
 
 <h1 class="page-header">お問い合わせ</h1>
@@ -94,4 +98,4 @@ showHeader($param);
 
 <?php
 // フッター表示
-showFooter($param);
+getFooter();

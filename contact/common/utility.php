@@ -7,28 +7,21 @@
  * Released under the MIT license
  */
 
+
 /**
-* showHeader
+* getHeader
 * ヘッダー共通ファイルを呼び出す
-* @param $param['root_url']     階層（パス）
 */
-function showHeader ($param=array()) {
-	// 共通ファイル読み込み
-	require_once($param['root_url'].'common/header.php');
-	// ヘッダー取得
-	getHeader($param);
+function getHeader () {
+	require_once(dirname(__FILE__).'/../common/header.php');
 }
 
 /**
-* showFooter
+* getFooter
 * フッター共通ファイルを呼び出す
-* @param $param['root_url']     階層（パス）
 */
-function showFooter ($param=array()) {
-	// 共通ファイル読み込み
-	require_once($param['root_url'].'common/footer.php');
-	// フッター取得
-	getFooter($param);
+function getFooter () {
+	require_once(dirname(__FILE__).'/../common/footer.php');
 }
 
 /**

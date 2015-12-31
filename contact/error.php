@@ -10,13 +10,15 @@
 // ファイル読み込み
 require_once('common/init.php');
 
+global $param;
+
 // ページタイトル
 $param['title'] = '予期せぬエラー | 無料ダウンロード';
 // パス
 $param['root_url'] = '';
 
 // ヘッダー表示
-showHeader($param);
+getHeader();
 ?>
 
 <h1 class="page-header">予期せぬエラーが発生しました</h1>
@@ -29,4 +31,4 @@ showHeader($param);
 
 <?php
 // フッター表示
-showFooter($param);
+getFooter();

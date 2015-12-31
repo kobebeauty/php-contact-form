@@ -10,6 +10,8 @@
 // ファイル読み込み
 require_once('common/init.php');
 
+global $param;
+
 // ページタイトル
 $param['title'] = 'お問い合わせ内容の確認 | 無料ダウンロード';
 // パス
@@ -49,7 +51,7 @@ if ($act == 3) {
 }
 
 // ヘッダー表示
-showHeader($param);
+getHeader();
 ?>
 
 <h1 class="page-header">お問い合わせ内容の確認</h1>
@@ -87,4 +89,4 @@ showHeader($param);
 
 <?php
 // フッター表示
-showFooter($param);
+getFooter();
