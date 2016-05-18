@@ -62,7 +62,7 @@ getHeader();
 		メールアドレスに間違いがあると回答の返信ができませんので十分にご確認ください。
 	</p>
 
-	<form class="form-horizontal" name="contactform" role="form" method="post" action="<?php echo $_SERVER["PHP_SELF"]; ?>">
+	<form class="form-horizontal" name="contactform" role="form" method="post" action="<?php echo htmlspchar($_SERVER['PHP_SELF']); ?>">
 		<table class="table table-bordered confirm">
 			<tr>
 				<th>お名前</th>

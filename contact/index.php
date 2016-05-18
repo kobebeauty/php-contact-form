@@ -75,7 +75,7 @@ getHeader();
 <div class="page-content">
 	<p class="mb30">以下を入力し確認するボタンを押してください。<span class="red">*</span>は入力必須です。</p>
 
-	<form class="form-horizontal" name="contactform" role="form" method="post" action="<?php echo $_SERVER["PHP_SELF"]; ?>" novalidate>
+	<form class="form-horizontal" name="contactform" role="form" method="post" action="<?php echo htmlspchar($_SERVER['PHP_SELF']); ?>" novalidate>
 		<div class="form-group">
 			<label for="inputName" class="col-sm-3 control-label">お名前<span class="red">*</span></label>
 			<div class="col-sm-9">
