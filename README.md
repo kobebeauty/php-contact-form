@@ -44,8 +44,8 @@ contact
 ※It does not describe the Bootstrap and Font Awesome related files
 
 ## Usage
-- [contact/pcf_lib/init.php](https://github.com/kobebeauty/php-contact-form/blob/master/contact/pcf_lib/init.php)でHOME_URLを設定します。（13〜15行目）  
-Please change the "HOME_URL" of the 13-15 line part of [contact/pcf_lib/init.php](https://github.com/kobebeauty/php-contact-form/blob/master/contact/pcf_lib/init.php).
+- [contact/pcf_lib/init.php](https://github.com/kobebeauty/php-contact-form/blob/master/contact/pcf_lib/init.php)でHOME_URLを設定します。（13〜16行目）  
+Please change the "HOME_URL" of the 13-16 line part of [contact/pcf_lib/init.php](https://github.com/kobebeauty/php-contact-form/blob/master/contact/pcf_lib/init.php).
 ```
 // *** 「/myphp/github-php-contact-form/contact/」を環境に合わせて必ず変更してください！！！
 // http://(またはhttps://)からホストまでを取得
