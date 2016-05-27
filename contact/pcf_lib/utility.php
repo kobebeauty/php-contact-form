@@ -13,7 +13,7 @@
 * ヘッダー共通ファイルを呼び出す
 */
 function getHeader () {
-	require_once(dirname(__FILE__).'/../common/header.php');
+	require_once( __DIR__ . '/../parts/header.php');
 }
 
 /**
@@ -21,7 +21,7 @@ function getHeader () {
 * フッター共通ファイルを呼び出す
 */
 function getFooter () {
-	require_once(dirname(__FILE__).'/../common/footer.php');
+	require_once( __DIR__ . '/../parts/footer.php');
 }
 
 /**

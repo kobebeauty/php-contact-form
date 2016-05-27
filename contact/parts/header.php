@@ -22,7 +22,7 @@ global $param;
 	<meta name="keywords" content="php,お問い合わせフォーム">
 
 	<!-- Style -->
-	<link href="<?php echo $param['root_url']; ?>assets/css/import.css" rel="stylesheet">
+	<link href="<?php echo HOME_URL; ?>assets/css/import.css" rel="stylesheet">
 
 	<!--[if lt IE 9]>
 	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>

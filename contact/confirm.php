@@ -8,14 +8,12 @@
  */
 
 // ファイル読み込み
-require_once('common/init.php');
+require_once( __DIR__ . '/pcf_lib/init.php');
 
 global $param;
 
 // ページタイトル
 $param['title'] = 'お問い合わせ内容の確認 | 無料ダウンロード';
-// パス
-$param['root_url'] = '';
 
 // セッションデータ取得
 $contact_data = isset($_SESSION["contact_data"]) ? $_SESSION["contact_data"] : array();
@@ -62,19 +60,19 @@ getHeader();
 		メールアドレスに間違いがあると回答の返信ができませんので十分にご確認ください。
 	</p>
 
-	<form class="form-horizontal" name="contactform" role="form" method="post" action="<?php echo htmlspchar($_SERVER['PHP_SELF']); ?>">
+	<form class="form-horizontal" name="contactform" role="form" method="post" action="">
 		<table class="table table-bordered confirm">
 			<tr>
 				<th>お名前</th>
-				<td><?php echo htmlspchar($name); ?></td>
+				<td><?php echo h($name); ?></td>
 			</tr>
 			<tr>
 				<th>メールアドレス</th>
-				<td><?php echo htmlspchar($email); ?></td>
+				<td><?php echo h($email); ?></td>
 			</tr>
 			<tr>
 				<th>お問い合わせ内容</th>
-				<td><?php echo nl2br(htmlspchar($message)); ?></td>
+				<td><?php echo nl2br(h($message)); ?></td>
 			</tr>
 		</table>
 

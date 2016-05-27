@@ -8,14 +8,12 @@
  */
 
 // ファイル読み込み
-require_once('common/init.php');
+require_once( __DIR__ . '/pcf_lib/init.php');
 
 global $param;
 
 // ページタイトル
 $param['title'] = '予期せぬエラー | 無料ダウンロード';
-// パス
-$param['root_url'] = '';
 
 // ヘッダー表示
 getHeader();
