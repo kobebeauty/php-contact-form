@@ -7,7 +7,7 @@ PHPによるお問い合わせフォームです。
 商用フリー、カスタマイズ自由です。  
 
 A contact form made that uses PHP, Bootstrap, Font Awesome.  
-Features PHP Input Validation without page transtion, Automatic reply mail function.  
+Features PHP Input Validation without page transition, Automatic reply mail function.  
 Commercial free, Customization freedom.
 
 ---
@@ -28,9 +28,10 @@ contact
 │   │   └── import.css
 │   ├── fonts
 │   └── js
-├── common
+├── parts
 │   ├── footer.php
-│   ├── header.php
+│   └── header.php
+├── pcf_lib
 │   ├── init.php
 │   ├── utility.php
 │   └── validate.php
@@ -43,16 +44,25 @@ contact
 ※It does not describe the Bootstrap and Font Awesome related files
 
 ## Usage
-- [contact/common/init.php](https://github.com/kobebeauty/php-contact-form/blob/master/contact/common/init.php)で管理者のメールアドレスを設定します。（13〜15行目）  
-Please change the "Administrator E-mail Address" of the 13-15 line part of [contact/common/init.php](https://github.com/kobebeauty/php-contact-form/blob/master/contact/common/init.php).
+- [contact/pcf_lib/init.php](https://github.com/kobebeauty/php-contact-form/blob/master/contact/pcf_lib/init.php)でHOME_URLを設定します。（13〜15行目）  
+Please change the "HOME_URL" of the 13-15 line part of [contact/pcf_lib/init.php](https://github.com/kobebeauty/php-contact-form/blob/master/contact/pcf_lib/init.php).
+```
+// *** 「/myphp/github-php-contact-form/contact/」を環境に合わせて必ず変更してください！！！
+// http://(またはhttps://)からホストまでを取得
+$site_url = (empty($_SERVER['HTTPS']) ? 'http://' : 'https://') . $_SERVER['HTTP_HOST'] . '/';
+define('HOME_URL', $site_url . '/myphp/github-php-contact-form/contact/');
+```
+
+- [contact/pcf_lib/init.php](https://github.com/kobebeauty/php-contact-form/blob/master/contact/pcf_lib/init.php)で管理者のメールアドレスを設定します。（18〜20行目）  
+Please change the "Administrator E-mail Address" of the 18-20 line part of [contact/pcf_lib/init.php](https://github.com/kobebeauty/php-contact-form/blob/master/contact/pcf_lib/init.php).
 ```
 // *** 「your_address@example.com」を必ず変更してください！！！
 // 自動返信メールの管理者メールアドレス
 define("ADMIN_MAIL", "your_address@example.com");
 ```
 
-- 自動送信されるメールの内容を変更したい場合は[contact/common/utility.php](https://github.com/kobebeauty/php-contact-form/blob/master/contact/common/utility.php)を編集してください。  
-If you want to change the content of the mail is transmitted automatically, please edit [contact/common/utility.php](https://github.com/kobebeauty/php-contact-form/blob/master/contact/common/utility.php)
+- 自動送信されるメールの内容を変更したい場合は[contact/pcf_lib/utility.php](https://github.com/kobebeauty/php-contact-form/blob/master/contact/pcf_lib/utility.php)を編集してください。  
+If you want to change the content of the mail is transmitted automatically, please edit [contact/pcf_lib/utility.php](https://github.com/kobebeauty/php-contact-form/blob/master/contact/pcf_lib/utility.php)
 
 ## Install
 管理者のメールアドレスを設定して、サーバーにアップすれば動作します。  
