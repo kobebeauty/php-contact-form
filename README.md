@@ -47,10 +47,10 @@ contact
 - [contact/pcf_lib/init.php](https://github.com/kobebeauty/php-contact-form/blob/master/contact/pcf_lib/init.php)でHOME_URLを設定します。（13〜16行目）  
 Please change the "HOME_URL" of the 13-16 line part of [contact/pcf_lib/init.php](https://github.com/kobebeauty/php-contact-form/blob/master/contact/pcf_lib/init.php).
 ```
-// *** 「/myphp/github-php-contact-form/contact/」を環境に合わせて必ず変更してください！！！
+// *** 「myphp/github-php-contact-form/contact/」を環境に合わせて必ず変更してください！！！
 // http://(またはhttps://)からホストまでを取得
 $site_url = (empty($_SERVER['HTTPS']) ? 'http://' : 'https://') . $_SERVER['HTTP_HOST'] . '/';
-define('HOME_URL', $site_url . '/myphp/github-php-contact-form/contact/');
+define('HOME_URL', $site_url . 'myphp/github-php-contact-form/contact/');
 ```
 
 - [contact/pcf_lib/init.php](https://github.com/kobebeauty/php-contact-form/blob/master/contact/pcf_lib/init.php)で管理者のメールアドレスを設定します。（18〜20行目）  
